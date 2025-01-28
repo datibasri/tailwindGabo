@@ -3,27 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind CSS Example</title>
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <h1 class="text-2xl font-bold text-center mt-16 mb-16">INVOICE #***</h1>
-  <div class="ml-[466px] mt-10 ">
-    <h1 class="text-black">EUROPEAN SCHOOL LTD</h1>
-    <h1 class="text-black">Legal address: l, skhirtlafze av. 2</h1>
-    <h1 class="text-black">Company ID: 205172917</h1>
+  <h2>INVOICE #***</h2>
+  <div class="EUROPEAN">
+    <h1>EUROPEAN SCHOOL LTD</h1>
+    <h1>Legal address: l, skhirtlafze av. 2</h1>
+    <h1>Company ID: 205172917</h1>
   </div>
-  <h1 class="font-medium ml-[466px] mt-10">Date:27.08.2024</h1>
+  <h1 class="Date">Date:27.08.2024</h1>
   
-  <table class="w-1/2 table-auto mt-6 text-sm border-collapse border border-gray-300 mx-auto">
+  <table>
     <thead>
       <tr>
-        <th class="border border-gray-300 p-2 ">#</th>
-        <th class="border text-black border-gray-300 p-2 text-center">
+        <th>#</th>
+        <th>
           Tuition Fee for(სრული დასახელება)
-          <h1>(2024-2025 Academic Year)</h1>
+          <h4>(2024-2025 Academic Year)</h4>
         </th>
-        <th class="border text-black border-gray-300 p-2 text-left">
+        <th>
           Semester I
         </th>
       </tr>
@@ -31,45 +29,108 @@
 
     <tbody>
       <tr>
-        <td class="border border-gray-300 p-2 text-center">1</td>
-        <td class="border p-1 text-center">სწავლის საფასური / Tuition Fee</td>
-        <td class="border border-gray-300 p-1 text-left text-black font-bold">€ 9,350.00</td>
+        <td>1</td>
+        <td>სწავლის საფასური / Tuition Fee</td>
+        <td class="mony">€ 9,350.00</td>
       </tr>
       <tr>
-        <td class="border border-gray-300 p-2 text-center">2</td>
-        <td class="border border-gray-300 p-2 text-center ">წინა წლის ბალანსი / Last Year Balance</td>
-        <td class="border border-gray-300 p-1 text-left text-black font-bold">€ 1,500.00</td>
+        <td>2</td>
+        <td>წინა წლის ბალანსი / Last Year Balance</td>
+        <td class="mony">€ 1,500.00</td>
       </tr>
       <tr>
-        <td class="border border-gray-300 p-2 text-center">3</td>
-        <td class="border border-gray-300 p-2 text-center">გადახდები /  Payments</td>
-        <td colspan="2"class="border font-bold border-gray-300 p-2 text-left  text-black">€ (9,500.00)</td>
+        <td>3</td>
+        <td>გადახდები /  Payments</td>
+        <td class="mony">€ (9,500.00)</td>
       </tr>
       <tr>
-        <td class="border border-gray-300 p-2 text-center">4</td>
-        <td class="border border-gray-300 p-2  text-center">5%-იანი ფასდაკლება / 5% Discount</td>
+        <td>4</td>
+        <td>5%-იანი ფასდაკლება / 5% Discount</td>
       </tr>
     </tbody>
 
     <tfoot>
       <tr>
-        <td class="text-black border p-2 font-bold text-center">5</td>
-        <td class="text-black border text-2xl p-2 text-right font-bold">Total</td>
-        <td class="text-black border text-2xl p-2  font-bold">
-          <span class="text-left">€</span>
-          <span class="text-right">1,350.00</span>
+        <td>5</td>
+        <td class="Total">Total</td>
+        <td class="monyTotal">
+          € 1,350.00
         </td>
       </tr>
     </tfoot>
   </table>
-  <div class="ml-[466px]">
-    <h3 class="mt-5">სწავლის საფასურის 100%-ის გადახდის ვადაა 31 მაისი.</h3>
+  <div class="tuitionFees">
+    <h3>სწავლის საფასურის 100%-ის გადახდის ვადაა 31 მაისი.</h3>
     <h3> 100% of the tuiton fee must be paid until 31st of may</h3>
   </div>
-  <h4 class="ml-[466px] pl-36 mt-36">*მოკლე ინსტრუქცია გადახდაზე*</h4>
-  <div class="ml-[466px]">
-    <h1 class="text-gray-700 font-bold mt-36">Ana Revazishvili</h1>
-  <h1 class="text-gray-700 font-bold">Accountant Assistant</h1>
+  <h4 class="instruction">*მოკლე ინსტრუქცია გადახდაზე*</h4>
+  <div class="Assistant">
+    <h4>Ana Revazishvili</h4>
+  <h4 class="block">Accountant Assistant</h4>
+  <img src="../beched.jpeg" alt="">
   </div>
 </body>
+<style>
+    table {
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 400px;
+    }
+
+    table, th, td {
+    border: 1px solid black;
+    }
+
+    th, td {
+    text-align: center;
+    padding: 10px;
+    }
+    h4{
+        margin: 0px;
+    }
+    h2{
+        text-align: center;
+    }
+    .EUROPEAN{
+        font-size: 8px;
+        margin-left: 22%;
+        margin-top: 4%;
+    }
+    .Date{
+        font-size: 18px;
+        margin-left: 22%;
+        margin-top: 2%;
+        margin-bottom: 20px;
+    }
+    .mony{
+        text-align: left;
+    }
+    .Total{
+        text-align: right;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .monyTotal{
+        text-align: left;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .tuitionFees{
+        font-size: 15px;
+        margin-left: 22%;
+    }
+    .instruction{
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+    .Assistant{
+        margin-left: 22%;
+    }
+    img{
+      width: 15%;
+      margin-left: 15%;
+      margin-top: -6%;
+    }
+</style>
 </html>
